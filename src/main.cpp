@@ -69,22 +69,22 @@ int main(int argc, char** argv)
 	// string what = "F";
 	// runOnly(net, l, what, network);
 
-	//Run training
-	network += " train";
-	train(net);
-
-	//Run inference (possibly with preloading a network)
-	// network += " test";
-	// test(PRELOADING, network, net);
-
-	end_m(network);
-	cout << "----------------------------------------------" << endl;  	
-	cout << "Run details: " << NUM_OF_PARTIES << "PC (P" << partyNum 
-		 << "), " << NUM_ITERATIONS << " iterations, batch size " << MINI_BATCH_SIZE << endl 
-		 << "Running " << security << " " << network << " on " << dataset << " dataset" << endl;
-	cout << "----------------------------------------------" << endl << endl;  
-
-	printNetwork(net);
+//	//Run training
+//	network += " train";
+//	train(net);
+//
+//	//Run inference (possibly with preloading a network)
+//	// network += " test";
+//	// test(PRELOADING, network, net);
+//
+//	end_m(network);
+//	cout << "----------------------------------------------" << endl;
+//	cout << "Run details: " << NUM_OF_PARTIES << "PC (P" << partyNum
+//		 << "), " << NUM_ITERATIONS << " iterations, batch size " << MINI_BATCH_SIZE << endl
+//		 << "Running " << security << " " << network << " on " << dataset << " dataset" << endl;
+//	cout << "----------------------------------------------" << endl << endl;
+//
+//	printNetwork(net);
 
 /****************************** CLEAN-UP ******************************/ 
 	delete aes_indep;

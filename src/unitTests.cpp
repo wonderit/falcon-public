@@ -98,7 +98,7 @@ void runTest(string str, string whichTest, string &network)
 		}
     else if (whichTest.compare("ReLU4") == 0)
     {
-      network = "Test ReLU3";
+      network = "Test ReLU4";
       testRelu(1, 10000, NUM_ITERATIONS);
     }
 		else if (whichTest.compare("ReLUPrime1") == 0)
